@@ -1,20 +1,24 @@
-import logo from './logo.svg';
-import user from './components/user';
-import navbar from "./components/navbar";
-import user from './components/user';
+
 import test from './test';
 
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const[show,setshow]= useState(false)
   return (
    <>
+   <button onClick={() =>setshow(show=>!show)}>
+    {show ? "gizle" :"gizle"}
+   </button>
+   <test/>
+   </>
 
 
       
     
       
-    </div>
+  
   );
 }
 
