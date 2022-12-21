@@ -1,24 +1,18 @@
-
-import test from './test';
-
-import './App.css';
-import { useState } from 'react';
+import logo from"./logo.svg"
+import"./style.css"
+import test from"./test"
 
 function App() {
-  const[show,setshow]= useState(false)
   return (
-   <>
-   <button onClick={() =>setshow(show=>!show)}>
-    {show ? "gizle" :"gizle"}
-   </button>
-   <test/>
-   </>
-
-
-      
-    
-      
   
+   <div className='app'>
+    <h3>{process.env.NODE_ENV}</h3>
+    <img src="/logo192.png" alt=""></img>
+
+    <img src={logo} alt=""></img>
+
+   </div>
+
   );
 }
 
